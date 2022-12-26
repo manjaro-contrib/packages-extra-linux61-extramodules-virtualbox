@@ -5,13 +5,13 @@
 # Ionut Biru <ibiru@archlinux.org>
 # Sébastien Luttringer <seblu@aur.archlinux.org>
 
-_linuxprefix=linux62
-_extramodules=extramodules-6.2-MANJARO
+_linuxprefix=linux61
+_extramodules=extramodules-6.1-MANJARO
 
 pkgname=("$_linuxprefix-virtualbox-host-modules")
 pkgver=7.0.4
 _pkgver="${pkgver}_OSE"
-pkgrel=0.1
+pkgrel=2
 pkgdesc='Virtualbox host kernel modules for Manjaro Kernel'
 arch=('x86_64')
 url='http://virtualbox.org'
