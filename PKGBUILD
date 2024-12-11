@@ -31,7 +31,7 @@ package() {
   _kernver="$(cat /usr/src/${_linuxprefix}/version)"
 
   cd "vboxhost/${pkgver}_OSE/${_kernver}/$CARCH/module"
-  install -Dm644 * -t "$pkgdir/usr/lib/modules/${_kernver}/extramodules/"
+  install -Dm644 *.ko* -t "$pkgdir/usr/lib/modules/${_kernver}/extramodules/"
 
   # compress each module individually
   find "${pkgdir}" -name '*.ko' -exec zstd --rm -19 {} +
